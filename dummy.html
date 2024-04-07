@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    div
+    {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+    }
+
+    p
+    {
+        background-color: yellow;
+    }
+
+    .one{
+       height: 200px;
+       width: 200px;
+       background-color: green; 
+       transition: 1s;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <p>Hello</p>
+    </div>
+
+    <div class="one" id="one">
+        hello everyone
+    </div>
+    <button onclick="doSomething()">
+        perform
+    </button>
+    <script>
+        function doSomething()
+        {
+            //document.getElementById("one").innerHTML="<h1>something new</h1>";
+            document.getElementById("one").style.height="400px";
+        }
+       
+    </script>
+</body>
+</html>
